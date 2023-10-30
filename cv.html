@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+    <title>Marietta Oravainen - Home</title>
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
+</head>
+<body>
+    <div class="flex-parent-element">
+
+        <div class="flex-child-element left">
+            <div class="context">
+                <ul class="nav">
+                    <li class="nav1" style="float:left"><a href="">Marietta Oravainen</a></li>
+                </ul>
+                <img class="img" style="width:60%; height:auto" src="images/error.jpg" alt="error">
+            </div>
+
+            <div class="area">
+                <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="flex-child-element right">
+            <table id="container">
+                <tr>
+                    <td valign="top">
+                        <script type="text/javascript">
+                            function confirm_alert(node) {
+                                return confirm("Send me an email for CV, page still in progress");
+                            }
+                        </script>
+                        <ul class="nav">
+                            <li class="nav1"><a class="active" href="cv.html" onclick="return confirm_alert(this);">CV</a></li>
+                            <li class="nav1"><a href="contact.html">Contact Me</a></li>
+                            <li class="nav1"><a href="studies.html">Studies</a></li>
+                            <li class="nav1"><a href="about.html">About Me</a></li>
+                            <li class="nav1"><a href="index.html">Home</a></li>
+                        </ul>
+                        <div class="introduction">
+                            <div class="bottomline">
+                                <h1 style="font-size: 50px; text-align: center">Page not found!</h1>
+                            </div>
+                            <div class="bottomline" style="padding-bottom:20px">
+                                <div id="ajax">
+                                    <p style="text-align:left">
+                                        Unfortunately, the page you are looking for is not yet available. Little fairies are working diligently to get it up and running as soon as possible. Thank you for your patience.
+                                    </p>
+                                    <button class="button" type="button" onclick="setTimeout(loadDoc, 3000);">Try again</button>
+                                </div>
+                                <script>
+                                    function loadDoc() {
+                                        const xhttp = new XMLHttpRequest();
+                                        xhttp.onload = function () {
+                                            document.getElementById("ajax").innerHTML =
+                                                this.responseText;
+                                        }
+                                        xhttp.open("GET", "cv.txt");
+                                        xhttp.send();
+                                    }
+                                </script>
+                            </div>
+
+                            <p>Input a number between 1 and 5 to select how many copies you want</p>
+
+                            <input id="nmb" type="text">
+                            <button class="button" type="button" onclick="myFunction()">Get copies</button>
+                            <p id="p01"></p>
+
+                            <script>
+                                function myFunction() {
+                                    const message = document.getElementById("p01");
+                                    message.innerHTML = "CV is still not ready...";
+                                    let x = document.getElementById("nmb").value;
+                                    try {
+                                        if (x.trim() == "") throw "empty";
+                                        if (isNaN(x)) throw "not a number";
+                                        x = Number(x);
+                                        if (x < 1) throw "too low";
+                                        if (x > 5) throw "too high";
+                                    }
+                                    catch (err) {
+                                        message.innerHTML = "Input is " + err;
+                                    }
+                                }
+                            </script>
+
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="bottom">
+                        <footer class="footer">
+                            <p>&copy; Marietta Oravainen 2023 <br />&copy; Photos edited with <a href="https://prisma-ai.com/lensa" target="_blank">Lensa</a></p>
+                        </footer>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</body>
+</html>
