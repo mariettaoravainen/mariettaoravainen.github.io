@@ -18,16 +18,8 @@
 
             <div class="area">
                 <ul class="circles">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li></li><li></li><li></li><li></li><li></li>
+                    <li></li><li></li><li></li><li></li><li></li>
                 </ul>
             </div>
         </div>
@@ -36,13 +28,8 @@
             <table id="container">
                 <tr>
                     <td valign="top">
-                        <script type="text/javascript">
-                            function confirm_alert(node) {
-                                return confirm("Send me an email for CV, page still in progress");
-                            }
-                        </script>
                         <ul class="nav">
-                            <li class="nav1"><a href="cv.html" onclick="return confirm_alert(this);">CV</a></li>
+                            <li class="nav1"><a href="cv.html" onclick="return confirm('Send me an email for CV, page still in progress');">CV</a></li>
                             <li class="nav1"><a href="contact.html">Contact Me</a></li>
                             <li class="nav1"><a class="active" href="studies.html">Studies</a></li>
                             <li class="nav1"><a href="about.html">About Me</a></li>
@@ -52,60 +39,64 @@
                             <div class="bottomline">
                                 <h1 style="font-size: 50px; text-align: left">Studies</h1>
                             </div>
+
+                            <!-- Jump menu -->
+                            <div style="margin-top: 20px; margin-bottom: 30px;">
+                                <strong>Jump to year:</strong>
+                                <ul style="list-style-type: none; padding-left: 0; margin-top: 10px;">
+                                    <li><a href="#year1">1st Year (2022–2023)</a></li>
+                                    <li><a href="#year2">2nd Year (2023–2024)</a></li>
+                                    <li><a href="#year3">3rd Year (2024–2025)</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Year 1 -->
+                            <h2 id="year1" style="font-size: 24px; margin-top: 40px;">1st Year (2022–2023)</h2>
                             <p style="text-align:left">
-                                In my first year of studies, I had the opportunity to engage in two significant group projects. The first project
-                                took place in the fall of 2022, where our team worked on creating a physical, functional tic-tac-toe game
-                                using Arduino. This involved both the construction of the game using Arduino hardware and the coding of
-                                the necessary program using the Arduino IDE.<br />
-                                <br />
-                                In the spring of 2023, our focus shifted entirely towards coding in a project centered around simulating a
-                                banking system. This project provided a deep dive into the intricacies of programming.
-                                Towards the end of the first academic year, a crucial decision point arrived: the choice between specializing
-                                in software or hardware. I opted for the software track, aligning my academic path with a focus on software
-                                development.<br />
-                                <br />
-                                The structure of the second year of my studies mirrors that of the first, with one project in the fall and
-                                another in the spring. These projects are typically collaborative efforts, allowing for extensive experience in
-                                teamwork and collaboration.<br />
-                                <br />
-                                The project for the fall of 2023 during my second year of studies was centered around creating a movie website.
-                                As a group, our task was to develop a functional website dedicated to movies.
-                                This involved enabling users to create accounts, browse through a collection of films, and write reviews for the movies.
-                                Additionally, we created a promotional video for the website and uploaded it to YouTube.<br />
-                                <br />                        
-                                In spring 2024, I participated in the Joffer project, a collaboration with Fontys University in the Netherlands.
-                                Our team developed the mobile version of the Joffer job search platform, working alongside OAMK students handling
-                                the web version and Fontys students managing the backend. This experience enhanced my teamwork skills and
-                                my understanding of collaborative software development. <br />
-                                <br />   
-                                Explore projects: Moviehub (Fall 2023) and Joffer (Spring 2024)
-                                Below are links to the introductory video and GitHub repository for the Moviehub project, as well as the GitHub repository for the Joffer project:
-                                <li id="youtube"><a href= 'https://www.youtube.com/watch?v=O0UHu0gJ2OY' target="_blank">Moviehub YouTube</a></li> <br />
-                                <li id="github"><a href= 'https://github.com/ohjelmoinninsovellusprojekti-ryhma-1/Sovellus' target="_blank">Moviehub GitHub</a></li> <br />
-                                <li id="github"><a href= 'https://github.com/Joffer-Project/JofferMobile/tree/Marietta' target="_blank">Joffer GitHub</a></li> <br />
-                                <br />
+                                In fall 2022, I completed my first group project on the hardware-oriented track: a physical tic-tac-toe game 
+                                built with an Arduino circuit board and programmed in C++ using the Arduino IDE.<br><br>
+                                In spring 2023, we developed a banking system simulator using C++ and the Qt framework. The system integrated 
+                                a physical card reader, offering hands-on experience with both software logic and hardware interaction.<br><br>
+                                After this year, I decided to specialize in software development.
                             </p>
+
+                            <!-- Year 2 -->
+                            <h2 id="year2" style="font-size: 24px; margin-top: 40px;">2nd Year (2023–2024)</h2>
+                            <p style="text-align:left">
+                                In fall 2023, our team developed Moviehub, a full-stack movie review platform. The frontend was built with React,
+                                and the backend was implemented using Node.js and Java. Users could register, browse films, and leave reviews. 
+                                We also created a promotional video and published it on YouTube.<br><br>
+                                In spring 2024, I participated in the international Joffer project in collaboration with Fontys University 
+                                of Applied Sciences(Netherlands). The project focused on creating a job search platform with both web and mobile versions. 
+                                Our team developed the mobile client, while the Fontys team handled the backend and the OAMK team implemented the web interface.
+                            </p>
+                            <ul>
+                                <li id="youtube"><a href='https://www.youtube.com/watch?v=O0UHu0gJ2OY' target="_blank">Moviehub YouTube</a></li>
+                                <li id="github"><a href='https://github.com/ohjelmoinninsovellusprojekti-ryhma-1/Sovellus' target="_blank">Moviehub GitHub</a></li>
+                                <li id="github"><a href='https://github.com/Joffer-Project/JofferMobile/tree/Marietta' target="_blank">Joffer GitHub</a></li>
+                            </ul>
+
+                            <!-- Year 3 -->
+                            <h2 id="year3" style="font-size: 24px; margin-top: 40px;">3rd Year (2024–2025)</h2>
+                            <p style="text-align:left">
+                                The fall semester of 2024 was mainly theory-based.<br><br> 
+                                In spring 2025, I began an exchange program at Hochschule der Medien in Stuttgart, Germany. The curriculum combined 
+                                theoretical courses with project-based work.The most notable project was completed in collaboration with Mercedes-Benz.
+                                Our team explored the question: "How can people learn to make more sustainable EV charging choices?" The project included research,
+                                user interviews, and the design of a prototype/mockup related to smart charging.
+                            </p>
+
+                            <!-- Project Table -->
                             <table id="projects">
                                 <tr>
                                     <th>Projects</th>
                                     <th>Year</th>
                                 </tr>
-                                <tr>
-                                    <td>Tic Tac Toe</td>
-                                    <td>1st year fall 2022</td>
-                                </tr>
-                                <tr>
-                                    <td>Bank Simul</td>
-                                    <td>1st year spring 2023</td>
-                                </tr>
-                                <tr>
-                                    <td>Moviehub</td>
-                                    <td>2nd year fall 2023</td>
-                                </tr>  
-                                <tr>
-                                    <td>Joffer</td>
-                                    <td>2nd year spring 2024</td>
-                                </tr>
+                                <tr><td>Tic Tac Toe</td><td>1st year fall 2022</td></tr>
+                                <tr><td>Bank Simul</td><td>1st year spring 2023</td></tr>
+                                <tr><td>Moviehub</td><td>2nd year fall 2023</td></tr>
+                                <tr><td>Joffer</td><td>2nd year spring 2024</td></tr>
+                                <tr><td>Mercedes-Benz Project</td><td>3rd year spring 2025</td></tr>
                             </table>
                         </div>
                     </td>
